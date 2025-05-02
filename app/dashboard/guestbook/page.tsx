@@ -1,7 +1,7 @@
 'use client';
 
-import { deleteGuestbook, getGuestbooks } from '@/lib/api/api';
-import React, { useEffect, useState } from 'react';
+import { deleteGuestbook } from '@/lib/api/api';
+import React from 'react';
 import '../../../style/guestbook.css';
 import { SectionFourCardWrap } from '@/components/ui/sectionFour/components/SectionFourCardWrap';
 import Link from 'next/link';

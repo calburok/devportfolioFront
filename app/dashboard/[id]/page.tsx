@@ -6,11 +6,9 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import '../../../style/guestbookID.css';
 import { useParams } from 'next/navigation';
-import { useRouter } from 'next/navigation';
 
 export default function Page() {
   const params = useParams();
-  const router = useRouter();
 
   const guestbookId = params.id as string;
   const [data, setData] = useState<Guestbook | null>(null);
