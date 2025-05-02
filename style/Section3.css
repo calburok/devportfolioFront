@@ -1,6 +1,20 @@
 .sectionThree {
-  padding: 270px 130px;
-  margin-top: 400px;
+  padding: 100px 20px;
+  margin-top: 200px;
+}
+
+@media (min-width: 768px) {
+  .sectionThree {
+    padding: 200px 50px;
+    margin-top: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sectionThree {
+    padding: 270px 130px;
+    margin-top: 400px;
+  }
 }
 
 .cardWrapper {
@@ -13,20 +27,34 @@
 
 .sectionThreeCard {
   width: 100%;
-  height: 530px;
-  padding: 70px 60px;
+  height: auto;
+  min-height: 400px;
+  padding: 40px 30px;
   box-shadow: 0 -15px 32px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   background: #333333;
   transform-style: preserve-3d;
   transform: rotateX(-8deg) translateZ(-5px);
-  transition:
-    color 0.6s,
-    transform 0.6s ease;
+  transition: all 0.6s ease;
   border-radius: 23px;
   position: relative;
-  margin-top: -350px;
+  margin-top: -100px;
   border-top: 10px solid #000;
+}
+
+@media (min-width: 768px) {
+  .sectionThreeCard {
+    padding: 50px 40px;
+    margin-top: -200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sectionThreeCard {
+    height: 530px;
+    padding: 70px 60px;
+    margin-top: -350px;
+  }
 }
 
 .sectionThreeColor {
@@ -57,27 +85,58 @@
 }
 
 .cardTitle {
-  font-size: 60px;
+  font-size: 32px;
   font-weight: bold;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .cardTitle {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardTitle {
+    font-size: 60px;
+    margin-bottom: 50px;
+  }
 }
 
 .cardText {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 20px;
-  line-height: 1.2;
+  line-height: 1.4;
   word-break: keep-all;
 }
 
+@media (min-width: 768px) {
+  .cardText {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardText {
+    font-size: 18px;
+  }
+}
+
 .techbtn {
-  padding: 5px 10px;
-  font-size: 12px;
+  padding: 4px 8px;
+  font-size: 11px;
   border-radius: 20px;
   color: #222;
   background: #6b8cff;
-  transition:
-    background 0.3s,
-    color 0.3s;
+  transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+  .techbtn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
 }
 
 .techWrap {
@@ -87,46 +146,150 @@
 
 .pageNum {
   position: absolute;
-  right: 40px;
-  top: 40px;
-  font-size: 42px;
+  right: 20px;
+  top: 20px;
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .pageNum {
+    right: 30px;
+    top: 30px;
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pageNum {
+    right: 40px;
+    top: 40px;
+    font-size: 42px;
+  }
 }
 
 .btnWrap {
   position: absolute;
-  top: 185px;
-  right: 60px;
+  top: 120px;
+  right: 30px;
   z-index: 10;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   align-items: end;
+}
+
+@media (min-width: 768px) {
+  .btnWrap {
+    top: 250px;
+    right: 40px;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .btnWrap {
+    top: 185px;
+    right: 60px;
+  }
 }
 
 .viewBtn,
 .codeBtn {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   text-align: right;
   text-transform: uppercase;
   transition: transform 0.2s;
 }
 
+@media (min-width: 768px) {
+  .viewBtn,
+  .codeBtn {
+    font-size: 15px;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .viewBtn,
+  .codeBtn {
+    font-size: 16px;
+  }
+}
+
 .arrowIcon {
-  font-size: 30px;
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  .arrowIcon {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .arrowIcon {
+    font-size: 30px;
+  }
 }
 
 .MainText {
-  font-size: 5vw;
+  font-size: 3rem;
   background: linear-gradient(45deg, #6b8cff, #4a90e2, #8b5cf6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   position: relative;
-  top: -500px; /* 숫자에 px 빠져있던 거 수정 */
-  padding-left: 100px;
+  top: -200px;
+  padding-left: 20px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .MainText {
+    font-size: 4rem;
+    top: -300px;
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .MainText {
+    font-size: 5vw;
+    top: -500px;
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionThreeCard:hover {
+    transform: translateY(-50px) rotateX(-5deg) translateZ(-5px);
+  }
+}
+
+@media (min-width: 768px) {
+  .sectionThreeCard:hover {
+    transform: translateY(-100px) rotateX(-5deg) translateZ(-5px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .sectionThreeCard:hover {
+    transform: translateY(-170px) rotateX(-5deg) translateZ(-5px);
+  }
+}
+@media (max-width: 768px) {
+  .btnWrap {
+    position: absolute;
+    top: 230px;
+    left: 30px;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: end;
+  }
 }
