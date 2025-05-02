@@ -1,0 +1,120 @@
+.greenText {
+  font-size: 6vw;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    #00ff04 0%,
+    #4a90e2 25%,
+    #8b5cf6 75%,
+    #47ac7f 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  line-height: 1;
+  text-shadow: 0 2px 4px rgba(0, 255, 4, 0.2);
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.sectionONE {
+  position: relative;
+}
+
+.sectionOneTextWrap > * {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.sectionOneTextWrap {
+  padding: 150px 100px 450px;
+  position: relative;
+  z-index: 10;
+}
+
+.sectionOneImgBox {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  z-index: 1; /* ✅ 이미지 뒤로 */
+  pointer-events: none; /* 애니메이션 방해 방지 */
+}
+
+.sectionOneImgFrog,
+.sectionOneImgAlien,
+.sectionOneImgPeach,
+.sectionOneImgBirus,
+.sectionOneImgOver {
+  position: absolute;
+}
+
+/* 위치만 설정 (애니메이션은 JS에서) */
+.sectionOneImgFrog {
+  top: -10%;
+  left: -10%;
+  width: 26%;
+  transform: rotate(19deg);
+}
+
+.sectionOneImgAlien {
+  top: 18%;
+  left: 30%;
+  width: 26%;
+
+  transform: rotate(29deg);
+}
+
+.sectionOneImgPeach {
+  top: 70%;
+  right: 50%;
+  width: 17%;
+}
+
+.sectionOneImgBirus {
+  top: 40%;
+  left: 10%;
+  width: 20%;
+}
+
+.sectionOneImgOver {
+  right: 10%;
+  top: 35%;
+  width: 15%;
+  filter: blur(10px);
+}
+.whiteText {
+  color: white;
+  font-size: 6vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.textItem {
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+.sectionOneTextWrap {
+  overflow: hidden; /* ✅ 스크롤 영역 요동 방지 */
+}
+@media screen and (max-width: 600px) {
+  .whiteText,
+  .greenText {
+    font-size: 8vw;
+  }
+
+  .sectionOneTextWrap {
+    padding: 50px 30px 160px;
+  }
+}

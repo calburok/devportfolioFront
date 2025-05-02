@@ -1,0 +1,132 @@
+.sectionThree {
+  padding: 270px 130px;
+  margin-top: 400px;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.sectionThreeCard {
+  width: 100%;
+  height: 530px;
+  padding: 70px 60px;
+  box-shadow: 0 -15px 32px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  background: #333333;
+  transform-style: preserve-3d;
+  transform: rotateX(-8deg) translateZ(-5px);
+  transition:
+    color 0.6s,
+    transform 0.6s ease;
+  border-radius: 23px;
+  position: relative;
+  margin-top: -350px;
+  border-top: 10px solid #000;
+}
+
+.sectionThreeColor {
+  background: linear-gradient(45deg, #6b8cff, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition:
+    background 0.6s,
+    -webkit-text-fill-color 0.6s; /* 추가 */
+}
+
+.sectionThreeCard:hover {
+  transform: translateY(-170px) rotateX(-5deg) translateZ(-5px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(45deg, #6b8cff, #8b5cf6);
+  color: black;
+}
+
+.sectionThreeCard:hover .sectionThreeColor {
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: black; /* hover 시 색만 자연스럽게 */
+}
+
+.sectionThreeCard:hover .techbtn {
+  background: black;
+  color: #6b8cff;
+}
+
+.cardTitle {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.cardText {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  word-break: keep-all;
+}
+
+.techbtn {
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  color: #222;
+  background: #6b8cff;
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+
+.techWrap {
+  display: flex;
+  gap: 10px;
+}
+
+.pageNum {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  font-size: 42px;
+}
+
+.btnWrap {
+  position: absolute;
+  top: 185px;
+  right: 60px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: end;
+}
+
+.viewBtn,
+.codeBtn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+  text-transform: uppercase;
+  transition: transform 0.2s;
+}
+
+.arrowIcon {
+  font-size: 30px;
+}
+
+.MainText {
+  font-size: 5vw;
+  background: linear-gradient(45deg, #6b8cff, #4a90e2, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  position: relative;
+  top: -500px; /* 숫자에 px 빠져있던 거 수정 */
+  padding-left: 100px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
