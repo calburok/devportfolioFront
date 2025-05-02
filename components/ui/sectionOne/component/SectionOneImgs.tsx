@@ -88,7 +88,6 @@ const SectionOneImgs = () => {
             start: 'top top',
             end: 'bottom top',
             scrub: 1.7,
-            markers: true,
           },
         }
       );
