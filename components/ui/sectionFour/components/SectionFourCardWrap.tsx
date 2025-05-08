@@ -30,11 +30,17 @@ export const SectionFourCardWrap = () => {
   }, [releadkey]);
   return (
     <div className="container px-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {guestbooks.map((guestbook) => (
-          <GuestbookCard key={guestbook.id} guestbook={guestbook} />
-        ))}
-      </div>
+      {guestbooks.length === 0 ? (
+        <div className="text-center py-32 text-gray-500 text-lg min-h-[60vh] flex items-center justify-center">
+          방명록이 없습니다
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {guestbooks.map((guestbook) => (
+            <GuestbookCard key={guestbook.id} guestbook={guestbook} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };

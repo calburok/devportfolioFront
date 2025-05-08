@@ -36,10 +36,10 @@ const Card = ({
           <Link href={link} className="viewBtn sectionThreeColor">
             VIEW SITE <MdArrowRightAlt className="arrowIcon" />
           </Link>
-          <Link href={code} className="codeBtn sectionThreeColor">
+          {/* <Link href={code} className="codeBtn sectionThreeColor">
             CODE REVIEW
             <MdArrowRightAlt className="arrowIcon" />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

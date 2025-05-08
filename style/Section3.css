@@ -38,7 +38,7 @@
   transition: all 0.6s ease;
   border-radius: 23px;
   position: relative;
-  margin-top: -100px;
+  margin-top: -200px;
   border-top: 10px solid #000;
 }
 
@@ -266,13 +266,13 @@
 
 @media (max-width: 768px) {
   .sectionThreeCard:hover {
-    transform: translateY(-50px) rotateX(-5deg) translateZ(-5px);
+    transform: translateY(-170px) rotateX(-5deg) translateZ(-5px);
   }
 }
 
 @media (min-width: 768px) {
   .sectionThreeCard:hover {
-    transform: translateY(-100px) rotateX(-5deg) translateZ(-5px);
+    transform: translateY(-190px) rotateX(-5deg) translateZ(-5px);
   }
 }
 
