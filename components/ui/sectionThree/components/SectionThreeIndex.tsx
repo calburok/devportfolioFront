@@ -13,7 +13,7 @@ const SectionThreeIndex = () => {
           text="투썸플레이스를 모티브로 한 반응형 카페 웹사이트입니다."
           tech={['React', 'Next.js', 'Node.js']}
           link="https://project-twosome2.vercel.app/"
-          code="https://github.com/your-id/project-twosome2"
+          code="https://github.com/juntae-123/project_twosome"
           pageNum="1"
         />
 
